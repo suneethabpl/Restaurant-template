@@ -1,0 +1,3008 @@
+                                    @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+                                    @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+                                    * {
+                                        box-sizing: border-box;
+                                        text-decoration: none;
+                                    }
+                                    
+                                    ul {
+                                        list-style: none;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+                                    
+                                    .topHeader {
+                                        padding: 4px 0;
+                                        margin-bottom: 0;
+                                        background: transparent;
+                                        border-bottom: 1px solid #dedede;
+                                    }
+                                    
+                                    .topHeader ul li {
+                                        display: inline-block;
+                                        text-transform: lowercase;
+                                        font-weight: 500;
+                                        font-size: 13px;
+                                        margin-right: 15px;
+                                        padding-right: 15px;
+                                    }
+                                    
+                                    .topHeader .topHeader-left ul li {
+                                        border-right: 1px solid #bdbdbd
+                                    }
+                                    
+                                    .topHeader .topHeader-left ul li:last-child {
+                                        border-right: 0;
+                                        padding-right: 0;
+                                        margin-right: 0;
+                                    }
+                                    
+                                    .topHeader ul li i {
+                                        padding-right: 5px;
+                                        color: #e7272d;
+                                        font-size: 14px;
+                                    }
+                                    
+                                    .topHeader ul li a {
+                                        color: #646464;
+                                    }
+                                    
+                                    .topHeader ul li a:hover {
+                                        text-decoration: none;
+                                    }
+                                    
+                                    .topHeader .topHeader-right {
+                                        text-align: right;
+                                    }
+                                    
+                                    .topHeader-right ul li a {
+                                        display: inline;
+                                        margin-right: -15px;
+                                        padding-right: -15px;
+                                    }
+                                    
+                                    .main-header {
+                                        padding: 20px 0 0 0;
+                                    }
+                                    
+                                    .main-menu {
+                                        float: right;
+                                    }
+                                    
+                                    nav.desktopnav ul {
+                                        margin-top: 17px;
+                                        text-align: center;
+                                    }
+                                    
+                                    nav.desktopnav ul li {
+                                        display: inline-block;
+                                        position: relative;
+                                    }
+                                    
+                                    nav.desktopnav ul li a {
+                                        color: #222222;
+                                        padding: 0 5px;
+                                        display: block;
+                                        text-transform: uppercase;
+                                        text-decoration: none;
+                                        letter-spacing: 1px;
+                                        font-size: 14px;
+                                        font-family: 'Oswald', sans-serif;
+                                    }
+                                    
+                                    .main-menu nav.desktopnav ul li ul {
+                                        margin-top: 23px;
+                                        text-align: left;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        position: absolute;
+                                        top: 100%;
+                                        transform: scaleY(0);
+                                        transform-origin: 0 0 0;
+                                        transition: all 0.5s ease 0s;
+                                        width: 180px;
+                                        z-index: 99999;
+                                        background: #e7272d;
+                                        padding: 0;
+                                        left: 0;
+                                    }
+                                    
+                                    .main-menu nav.desktopnav ul li:hover ul {
+                                        opacity: 1;
+                                        transform: scaleY(1);
+                                        visibility: visible;
+                                    }
+                                    
+                                    .main-menu nav.desktopnav ul li ul>li {
+                                        padding: 0;
+                                        display: block;
+                                        border-bottom: 1px solid #d32f2f;
+                                    }
+                                    
+                                    .main-menu nav.desktopnav ul li ul>li:hover {
+                                        background: #d32f2f;
+                                        transition: all 0.5s ease-out;
+                                    }
+                                    
+                                    .main-menu nav.desktopnav ul li ul>li:last-child {
+                                        border-bottom: none;
+                                    }
+                                    
+                                    nav.desktopnav ul li ul li a {
+                                        color: #ffffff;
+                                        padding: 10px 10px 10px 15px;
+                                        display: block;
+                                    }
+                                    
+                                    nav.desktopnav ul li ul li a:hover {
+                                        color: #ffffff;
+                                    }
+                                    
+                                    .main-menu-area li.Demo-angle-right {
+                                        position: relative;
+                                    }
+                                    
+                                    .main-menu li.Demo-angle-right>a:after {
+                                        font-family: 'FontAwesome';
+                                        content: "\f105";
+                                        float: right;
+                                    }
+                                    
+                                    .main-menu li.Demo-angle-right:hover ul.thired-level {
+                                        opacity: 1;
+                                        transform: scaleY(1);
+                                        visibility: visible;
+                                    }
+                                    
+                                    .main-menu li.Demo-angle-right>ul.thired-level {
+                                        position: absolute;
+                                        left: 180px;
+                                        top: 0;
+                                        opacity: 0;
+                                        transform: scaleY(0);
+                                        transform-origin: 0 0 0;
+                                        transition: all 0.5s ease 0s;
+                                    }
+                                    
+                                    .main-menu li.Demo-angle-right>ul.thired-level li a {
+                                        color: #ffffff;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .main-menu nav.desktopnav ul li .mega-menu {
+                                        padding: 18px 35px;
+                                        width: 710px;
+                                        left: -208px;
+                                    }
+                                    
+                                    nav.desktopnav ul li a:hover {
+                                        text-decoration: none;
+                                        color: #e7272d;
+                                    }
+                                    
+                                    .main-menu nav.desktopnav ul li .mega-menu>li {
+                                        width: 141px;
+                                        border-bottom: none;
+                                        display: inline-block;
+                                        margin-right: 14px;
+                                    }
+                                    
+                                    .mega-menu>li:hover {
+                                        background: transparent!important;
+                                    }
+                                    
+                                    .main-menu nav.desktopnav ul li .mega-menu>li a {
+                                        padding: 8px 0;
+                                        display: block;
+                                        border-bottom: 1px solid #d32f2f;
+                                    }
+                                    
+                                    .mega-menu>li:hover>a:hover {
+                                        color: #ffffff;
+                                    }
+                                    
+                                    .main-menu nav.desktopnav ul li .mega-menu>li:hover>a:hover {
+                                        color: #ffffff;
+                                        background: #d32f2f;
+                                        padding-left: 10px;
+                                        -webkit-transition: all 0.5s ease-out;
+                                        transition: all 0.5s ease-out;
+                                    }
+                                    
+                                    nav.desktopnav ul .active>a {
+                                        color: #e7272d;
+                                    }
+                                    
+                                    ul {
+                                        list-style: none;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+                                    
+                                    .mainHeader-right {
+                                        margin-top: 18px;
+                                        text-align: right;
+                                    }
+                                    
+                                    .mainHeader-right li {
+                                        cursor: pointer;
+                                        /* position: relative; */
+                                        display: inline-block;
+                                        width: 30px;
+                                        margin-right: 30px;
+                                        border-right: 1px solid #bdbdbd;
+                                        padding-right: 15px;
+                                    }
+                                    
+                                    .header-search a>i {
+                                        color: #e7272d;
+                                        font-size: 18px;
+                                    }
+                                    
+                                    .cart {
+                                        position: relative;
+                                    }
+                                    
+                                    .cart>a {
+                                        color: #bdbdbd;
+                                        font-size: 19px;
+                                    }
+                                    
+                                    .cart>a>span {
+                                        background: #e7272d;
+                                        border-radius: 45px;
+                                        color: #ffffff;
+                                        height: 20px;
+                                        padding: 0 6px;
+                                        position: absolute;
+                                        top: -13px;
+                                        width: 20px;
+                                        font-size: 12px;
+                                        right: -20px;
+                                        line-height: 20px;
+                                    }
+                                    /* for sticky header */
+                                    
+                                    .sticky {
+                                        background-color: #fff !important;
+                                        border-top: 0 none;
+                                        left: 0;
+                                        position: fixed !important;
+                                        top: 0;
+                                        width: 100%;
+                                        z-index: 99999;
+                                        padding: 0;
+                                        min-width: 100%;
+                                        display: block;
+                                        box-shadow: 0 0 5px 0 #888;
+                                    }
+                                    
+                                    .sticky ul.sub-menu li a:after {
+                                        width: 0;
+                                    }
+                                    
+                                    .menu ul ul,
+                                    .sticky .menu ul ul {
+                                        display: block;
+                                        position: absolute;
+                                        background-color: #fff;
+                                        top: 90px;
+                                        transition: all 0.3s ease-in-out;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        z-index: 99;
+                                    }
+                                    
+                                    .sticky.sub-menu,
+                                    .sub-menu {
+                                        min-width: 250px;
+                                        left: 15px;
+                                        border-radius: 2px;
+                                        position: relative;
+                                        background-color: #f9f9f9;
+                                        border-top: 5px solid #fbb822;
+                                        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+                                    }
+                                    
+                                    .menu ul ul li,
+                                    .sticky .menu ul ul li {
+                                        border-bottom: 1px solid #eee;
+                                        transition: all 0.3s ease-in-out;
+                                        background-color: #fff;
+                                    }
+                                    
+                                    .menu ul ul li a:hover i,
+                                    .menu ul ul li a:hover span,
+                                    .sticky .menu ul ul li a:hover {
+                                        border-left-color: #f7c75b;
+                                        color: #000 !important;
+                                        padding-left: 25px;
+                                    }
+                                    
+                                    .menu ul ul li a,
+                                    .sticky .menu ul ul li a {
+                                        padding: 15px 15px 6px;
+                                        margin: 0;
+                                        color: #555;
+                                        transition: all 0.3s ease-in-out;
+                                        border-left: 5px solid #eee;
+                                    }
+                                    
+                                    .animated {
+                                        -webkit-animation-duration: 1s;
+                                        animation-duration: 1s;
+                                        -webkit-animation-fill-mode: both;
+                                        animation-fill-mode: both;
+                                    }
+                                    
+                                    @-webkit-keyframes fadeInDown {
+                                        0% {
+                                            opacity: 0;
+                                            -webkit-transform: translateY(-20px);
+                                            transform: translateY(-20px)
+                                        }
+                                        100% {
+                                            opacity: 1;
+                                            -webkit-transform: translateY(0);
+                                            transform: translateY(0)
+                                        }
+                                    }
+                                    
+                                    @keyframes fadeInDown {
+                                        0% {
+                                            opacity: 0;
+                                            -webkit-transform: translateY(-20px);
+                                            -ms-transform: translateY(-20px);
+                                            transform: translateY(-20px)
+                                        }
+                                        100% {
+                                            opacity: 1;
+                                            -webkit-transform: translateY(0);
+                                            -ms-transform: translateY(0);
+                                            transform: translateY(0)
+                                        }
+                                    }
+                                    
+                                    .fadeInDown {
+                                        -webkit-animation-name: fadeInDown;
+                                        animation-name: fadeInDown
+                                    }
+                                    /* for sticky header ends */
+                                    /* for button scroll up starts */
+                                    
+                                    #btn-scrollup {
+                                        background-color: #e7272d;
+                                        font-weight: 700;
+                                        bottom: 85px;
+                                        color: #fff;
+                                        opacity: 0.8;
+                                        width: 40px;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        position: fixed;
+                                        right: 40px;
+                                        display: none;
+                                        z-index: 99;
+                                        transition: all 0.3s ease-in-out;
+                                        -webkit-transition: all 0.3s ease-in-out;
+                                        -ms-transition: all 0.3s ease-in-out;
+                                        -moz-transition: all 0.3s ease-in-out;
+                                        -o-transition: all 0.3s ease-in-out;
+                                        -webkit-border-radius: 15px 0;
+                                        -moz-border-radius: 15px 0;
+                                        border-radius: 15px 0;
+                                    }
+                                    
+                                    #btn-scrollup,
+                                    .bottom-quote,
+                                    .channel-main,
+                                    .inner-channels-3 ul,
+                                    .inner-channels-3 ul li,
+                                    .inner-title,
+                                    .social-media ul li a,
+                                    .social-media ul li a i {
+                                        text-align: center;
+                                    }
+                                    
+                                    #btn-scrollup::after {
+                                        content: '\f062';
+                                        font-size: 20px;
+                                        color: #fff;
+                                        font-family: "FontAwesome";
+                                        font-weight: 600;
+                                    }
+                                    
+                                    #btn-scrollup:hover {
+                                        text-decoration: none;
+                                    }
+                                    /* button scroll up ends */
+                                    /* carousel section */
+                                    
+                                    .ms-skin-black-2 .ms-slide .ms-slide-vpbtn,
+                                    .ms-skin-black-2 .ms-video-btn {
+                                        width: 45px;
+                                        height: 45px;
+                                        background: url(../images/home/black-skin-2.png) black no-repeat -16px -103px;
+                                        border: solid 3px rgb(255, 255, 255);
+                                        border-color: rgba(255, 255, 255, 0.4);
+                                        /* -webkit-background-clip: padding-box; */
+                                        top: 50%;
+                                        left: 50%;
+                                        margin: -23px 0 0 -23px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-slide .ms-slide-vpbtn:hover,
+                                    .ms-skin-black-2 .ms-video-btn:hover {
+                                        background-color: #3D3D3D;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-slide .ms-slide-vcbtn {
+                                        width: 25px;
+                                        height: 25px;
+                                        background: url(../images/home/black-skin-2.png) black no-repeat -27px -36px;
+                                        border: solid 2px white;
+                                        border-color: rgba(255, 255, 255, 0.4);
+                                        top: 15px;
+                                        right: 15px;
+                                    }
+                                    
+                                    .ms-skin-black-2.round-skin .ms-slide .ms-slide-vcbtn {
+                                        border-radius: 50px;
+                                    }
+                                    
+                                    .master-slider img {
+                                        max-width: none;
+                                    }
+                                    /* controls */
+                                    
+                                    .ms-skin-black-2 .ms-nav-next,
+                                    .ms-skin-black-2 .ms-nav-prev {
+                                        position: absolute;
+                                        cursor: pointer;
+                                        z-index: 10;
+                                        width: 45px;
+                                        height: 45px;
+                                        background: url(../images/left-arrow.png) no-repeat!important;
+                                        -webkit-background-clip: padding-box;
+                                        -moz-background-clip: padding-box;
+                                        background-clip: padding-box;
+                                        background-position: -88px -26px;
+                                        top: 50%;
+                                        left: 12px;
+                                        margin-top: -22px;
+                                    }
+                                    
+                                    .ms-skin-black-2.round-skin .ms-nav-next,
+                                    .ms-skin-black-2.round-skin .ms-nav-prev,
+                                    .ms-skin-black-2.round-skin .ms-slide .ms-slide-vpbtn,
+                                    .ms-skin-black-2.round-skin .ms-video-btn {
+                                        border-radius: 90px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-nav-next:hover,
+                                    .ms-skin-black-2 .ms-nav-prev:hover {
+                                        background-color: #3d3d3d;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-nav-next {
+                                        right: 12px;
+                                        margin-top: -14px;
+                                        left: auto;
+                                        transform: rotate(180deg);
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-thumb-frame-selected {
+                                        opacity: 0.6;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-thumb-list.ms-dir-h {
+                                        bottom: -60px;
+                                        width: 100%;
+                                        height: 60px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-thumb-list.ms-dir-v {
+                                        height: 100%;
+                                        width: 60px;
+                                        right: -60px;
+                                        top: 0;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-thumb-frame {
+                                        cursor: pointer;
+                                        float: left;
+                                        width: 60px;
+                                        height: 60px;
+                                        margin: 1px 0 0 1px;
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-bullets.ms-dir-h {
+                                        position: absolute;
+                                        bottom: 20px;
+                                        right: 0%;
+                                        max-width: 100%;
+                                        left: 0;
+                                        margin: 0 auto;
+                                        display: block;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-bullets.ms-dir-h .ms-bullets-count {
+                                        position: relative;
+                                        right: 0;
+                                        left: 0;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-bullet {
+                                        width: 40px!important;
+                                        height: 5px!important;
+                                        background: white;
+                                        border-color: white;
+                                        margin: 4px;
+                                        background-position: -34px -117px;
+                                    }
+                                    
+                                    .ms-skin-black-2.round-skin .ms-bullet {
+                                        border-radius: 15px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-bullet-selected {
+                                        background-color: #e7272d;
+                                        border-color: white;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-sbar {
+                                        position: absolute;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-sbar.ms-dir-h {
+                                        left: 10px;
+                                        right: 10px;
+                                        top: 5px
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-sbar.ms-dir-v {
+                                        top: 10px;
+                                        bottom: 10px;
+                                        right: 5px
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-sbar .ms-bar {
+                                        height: 4px;
+                                        background: #DD00FF;
+                                        border-radius: 4px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-sbar.ms-dir-v .ms-bar {
+                                        width: 4px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-timerbar {
+                                        width: 100%;
+                                        bottom: 0px;
+                                        position: absolute;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-time-bar {
+                                        height: 3px;
+                                        background: #000000;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-ctimer {
+                                        position: absolute;
+                                        top: 30px;
+                                        left: 30px;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip {
+                                        position: absolute;
+                                        z-index: 110;
+                                        cursor: auto;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-top .ms-tooltip-arrow,
+                                    .ms-skin-black-2 .ms-tooltip-bottom .ms-tooltip-arrow {
+                                        border-left: solid 10px transparent;
+                                        border-right: solid 10px transparent;
+                                        position: absolute;
+                                        left: 50%;
+                                        margin-left: -10px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-top .ms-tooltip-arrow {
+                                        border-top: solid 10px;
+                                        border-top-color: silver;
+                                        border-top-color: rgba(240, 240, 240, 0.88);
+                                        bottom: -10px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-bottom .ms-tooltip-arrow {
+                                        border-bottom: solid 10px;
+                                        border-bottom-color: silver;
+                                        border-bottom-color: rgba(240, 240, 240, 0.88);
+                                        top: -10px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-right .ms-tooltip-arrow,
+                                    .ms-skin-black-2 .ms-tooltip-left .ms-tooltip-arrow {
+                                        border-top: solid 10px transparent;
+                                        border-bottom: solid 10px transparent;
+                                        position: absolute;
+                                        top: 50%;
+                                        margin-top: -10px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-right .ms-tooltip-arrow {
+                                        border-right: solid 10px;
+                                        border-right-color: silver;
+                                        border-right-color: rgba(240, 240, 240, 0.88);
+                                        left: -10px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-left .ms-tooltip-arrow {
+                                        border-left: solid 10px;
+                                        border-left-color: silver;
+                                        border-left-color: rgba(240, 240, 240, 0.88);
+                                        right: -10px;
+                                    }
+                                    
+                                    @keyframes point-anim {
+                                        0% {
+                                            transform: scale(0.5);
+                                            -webkit-transform: scale(0.5);
+                                            -moz-transform: scale(0.5);
+                                            -o-transform: scale(0.5);
+                                            -ms-transform: scale(0.5);
+                                            opacity: 1;
+                                        }
+                                        100% {
+                                            transform: scale(0.5);
+                                            -webkit-transform: scale(0.5);
+                                            -moz-transform: scale(1.5);
+                                            -o-transform: scale(1.5);
+                                            -ms-transform: scale(1.5);
+                                            opacity: 0;
+                                        }
+                                    }
+                                    
+                                    @-webkit-keyframes point-anim {
+                                        0% {
+                                            -webkit-transform: scale(0.5);
+                                            opacity: 1;
+                                        }
+                                        100% {
+                                            -webkit-transform: scale(1.5);
+                                            opacity: 0;
+                                        }
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-point {
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-point .ms-point-center {
+                                        width: 12px;
+                                        height: 12px;
+                                        border-radius: 15px;
+                                        border: solid 2px #BBB;
+                                        background: white;
+                                        margin: -8px 0 0 -8px;
+                                        position: absolute;
+                                        z-index: 5;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-point .ms-point-border {
+                                        width: 22px;
+                                        height: 22px;
+                                        background: black;
+                                        background: rgba(0, 0, 0, 0.36);
+                                        margin: -11px 0 0 -11px;
+                                        position: absolute;
+                                        border-radius: 15px;
+                                        animation: point-anim 1.5s infinite;
+                                        -moz-animation: point-anim 1.5s infinite;
+                                        -webkit-animation: point-anim 1.5s infinite;
+                                        -o-animation: point-anim 1.5s infinite;
+                                    }
+                                    
+                                    .ms-android.ms-skin-black-2 .ms-tooltip-point .ms-point-border {
+                                        animation: none;
+                                        -moz-animation: none;
+                                        -webkit-animation: none;
+                                        -o-animation: none;
+                                    }
+                                    
+                                    .ms-ie7.ms-skin-black-2 .ms-tooltip-point .ms-point-border,
+                                    .ms-ie8.ms-skin-black-2 .ms-tooltip-point .ms-point-border {
+                                        display: none;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip {
+                                        max-width: 200px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-cont {
+                                        padding: 10px;
+                                        background: silver;
+                                        background: rgba(240, 240, 240, 0.88);
+                                        text-shadow: 0 1px 0px white;
+                                        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.04);
+                                    }
+                                    /* retina */
+                                    
+                                    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                                    only screen and ( min--moz-device-pixel-ratio: 2),
+                                    only screen and ( -o-min-device-pixel-ratio: 2/1),
+                                    only screen and ( min-device-pixel-ratio: 2),
+                                    only screen and ( min-resolution: 192dpi),
+                                    only screen and ( min-resolution: 2dppx) {
+                                        .ms-skin-black-2 .ms-slide .ms-slide-vpbtn,
+                                        .ms-skin-black-2 .ms-video-btn,
+                                        .ms-skin-black-2 .ms-slide .ms-slide-vcbtn,
+                                        .ms-skin-black-2 .ms-nav-next,
+                                        .ms-skin-black-2 .ms-nav-prev {
+                                            background-image: url(../images/home/black-skin-2-retina.png);
+                                            background-size: 152px 225px;
+                                        }
+                                    }
+                                    
+                                    .ms-layer.bold-title {
+                                        color: #FFF;
+                                        margin: 0 auto;
+                                        padding: 5px 15px;
+                                        font-family: 'Oswald', sans-serif;
+                                        line-height: 60px;
+                                        left: 0px !important;
+                                        right: 0 !important;
+                                        font-weight: 600;
+                                    }
+                                    
+                                    .ms-layer.bold-title-wstripe {
+                                        color: #555;
+                                    }
+                                    
+                                    .ms-layer.bold-title span {
+                                        color: #ff9581;
+                                        font-weight: 600;
+                                    }
+                                    
+                                    .ms-layer.normal-desc {
+                                        font-family: 'Oswald', sans-serif;
+                                        font-weight: 600!important;
+                                        color: #FFF;
+                                        background-color: transparent;
+                                        display: inline-block;
+                                        left: 0px !important;
+                                        right: 0 !important;
+                                        text-align: center;
+                                        margin: 0 auto !important;
+                                        padding: 10px 44px;
+                                    }
+                                    
+                                    .ms-layer.normal-desc-btn {
+                                        font-family: 'Oswald', sans-serif;
+                                        border: 2px solid #ffffff;
+                                        color: #ffffff;
+                                        padding: 10px 44px;
+                                        background: transparent;
+                                        text-transform: uppercase;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        display: inline-block;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    @media only screen and (max-width: 991px) {
+                                        .normal-desc-btn {
+                                            padding: 8px 36px;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    
+                                    @media only screen and (max-width: 479px) {
+                                        .normal-desc-btn {
+                                            padding: 7px 30px;
+                                            font-size: 13px;
+                                        }
+                                    }
+                                    
+                                    .normal-desc-btn:hover {
+                                        background: #e7272d;
+                                        border: 2px solid #e7272d;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                        color: #ffffff;
+                                    }
+                                    
+                                    .master-slider {
+                                        /* visibility: hidden; */
+                                        -moz-transform: translate3d(0, 0, 0);
+                                        -webkit-transform: translate3d(0, 0, 0);
+                                        -o-transform: translate3d(0, 0, 0);
+                                        -ms-transform: translate3d(0, 0, 0);
+                                        transform: translate3d(0, 0, 0);
+                                        margin-top: 0;
+                                    }
+                                    
+                                    .ms-slide-layers {
+                                        max-width: 1160px!important;
+                                        margin: 0 auto;
+                                        left: 0!important;
+                                        right: 0;
+                                    }
+                                    
+                                    .ms-ie img {
+                                        border: none;
+                                    }
+                                    
+                                    .ms-ie8 * {
+                                        opacity: inherit;
+                                        filter: inherit;
+                                    }
+                                    
+                                    .ms-ie7 {
+                                        zoom: 1;
+                                    }
+                                    
+                                    .ms-loading-container {
+                                        position: absolute;
+                                        width: 100%;
+                                        /* top: 0; */
+                                        border: none;
+                                    }
+                                    
+                                    .ms-loading-container .ms-loading,
+                                    .ms-slide .ms-slide-loading {
+                                        width: 36px;
+                                        height: 36px;
+                                        background: url(../images/loading.gif) no-repeat center white;
+                                        border-radius: 60px;
+                                        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+                                        position: absolute;
+                                        left: 50%;
+                                        top: 50%;
+                                        margin: -18px;
+                                        opacity: 0.9;
+                                        border: none;
+                                    }
+                                    /* grab cursor */
+                                    
+                                    .ms-def-cursor {
+                                        cursor: auto !important;
+                                    }
+                                    
+                                    .ms-view {
+                                        margin: 0px auto;
+                                        overflow: hidden;
+                                        background-color: #cecece;
+                                        position: relative;
+                                        -webkit-perspective: 2000px;
+                                        -moz-perspective: 2000px;
+                                        -ms-perspective: 2000px;
+                                        perspective: 2000px;
+                                    }
+                                    
+                                    .ms-view .ms-slide-container {
+                                        position: relative;
+                                    }
+                                    
+                                    .ms-slide {
+                                        position: absolute;
+                                        -webkit-transform: translateZ(0px);
+                                        -moz-transform: translateZ(0px);
+                                        -ms-transform: translateZ(0px);
+                                        -o-transform: translateZ(0px);
+                                        transform: translateZ(0px);
+                                        -webkit-transform-style: preserve-3d;
+                                        -moz-transform-style: preserve-3d;
+                                        -ms-transform-style: preserve-3d;
+                                        transform-style: preserve-3d;
+                                        height: 100%;
+                                    }
+                                    
+                                    .ms-slide .ms-slide-bgcont {
+                                        overflow: hidden;
+                                        width: 100%;
+                                    }
+                                    
+                                    .ms-container {
+                                        position: relative;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .ms-slide .ms-slide-bgcont img,
+                                    .ms-container {
+                                        -webkit-user-select: none;
+                                        -moz-user-select: none;
+                                        -ms-user-select: none;
+                                        user-select: none;
+                                    }
+                                    
+                                    .ms-slide .ms-layer {
+                                        position: absolute;
+                                    }
+                                    
+                                    .ms-slide .ms-slide-layers {
+                                        position: absolute;
+                                        overflow: hidden;
+                                        width: 100%;
+                                        height: auto;
+                                        z-index: 10;
+                                        top: 0px;
+                                    }
+                                    
+                                    .ms-slide .ms-slide-video {
+                                        position: absolute;
+                                        top: 0;
+                                        z-index: 11;
+                                        background: black;
+                                        padding: 0;
+                                        margin: 0;
+                                        border: none;
+                                    }
+                                    
+                                    .ms-layer.video-box {
+                                        background: black;
+                                    }
+                                    
+                                    .ms-layer.video-box iframe {
+                                        padding: 0;
+                                        margin: 0;
+                                        border: none;
+                                        position: absolute;
+                                        z-index: 10;
+                                    }
+                                    
+                                    .ms-slide .ms-slide-vpbtn,
+                                    .ms-slide .ms-video-btn {
+                                        position: absolute;
+                                        cursor: pointer;
+                                        z-index: 10;
+                                    }
+                                    
+                                    .ms-slide .ms-slide-vcbtn {
+                                        position: absolute;
+                                        cursor: pointer;
+                                        z-index: 13;
+                                    }
+                                    
+                                    .ms-slide-vcbtn-mobile {
+                                        position: relative;
+                                        bottom: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 28px;
+                                        background-color: black;
+                                        color: white;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        z-index: 13;
+                                    }
+                                    
+                                    .ms-slide-vcbtn-mobile .ms-vcbtn-txt {
+                                        text-transform: uppercase;
+                                        font-family: 'Roboto-Regular';
+                                        font-size: 0.75em;
+                                        display: inline-block;
+                                        background: url(video-close-btn.png) no-repeat 0px 3px;
+                                        padding-left: 15px;
+                                        height: 15px;
+                                        color: #DBDBDB;
+                                        margin-top: 7px;
+                                    }
+                                    
+                                    .ms-slide .ms-slide-vcbtn,
+                                    .ms-slide .ms-slide-layers,
+                                    .ms-slide .ms-slide-vpbtn,
+                                    .ms-slide .ms-slide-video {
+                                        -webkit-transform: translateZ(0.11px);
+                                        -moz-transform: translateZ(0.11px);
+                                        -ms-transform: translateZ(0.11px);
+                                        -o-transform: translateZ(0.11px);
+                                        transform: translateZ(0.11px);
+                                    }
+                                    
+                                    .ms-video-img {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                    
+                                    .ms-mask-frame {
+                                        overflow: hidden;
+                                        position: absolute;
+                                        float: left;
+                                    }
+                                    /* controls */
+                                    
+                                    .ms-thumb-list {
+                                        overflow: hidden;
+                                        position: absolute;
+                                    }
+                                    
+                                    .ms-thumbs-cont {
+                                        position: relative;
+                                    }
+                                    
+                                    .ms-thumb-frame img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                    
+                                    .ms-thumb-frame {
+                                        cursor: pointer;
+                                        float: left;
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .ms-bullet {
+                                        cursor: pointer;
+                                        float: left;
+                                    }
+                                    
+                                    .ms-sbar .ms-bar {
+                                        position: relative;
+                                        -webkit-transition: opacity 300ms;
+                                        -moz-transition: opacity 300ms;
+                                        -ms-transition: opacity 300ms;
+                                        -o-transition: opacity 300ms;
+                                        transition: opacity 300ms;
+                                    }
+                                    
+                                    .ms-time-bar {
+                                        -webkit-transition: width 120ms linear;
+                                        -moz-transition: width 120ms linear;
+                                        -ms-transition: width 120ms linear;
+                                        -o-transition: width 120ms linear;
+                                        transition: width 120ms linear;
+                                    }
+                                    
+                                    .ms-ie7 .ms-tooltip-arrow {
+                                        height: 0px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-slide .ms-slide-vpbtn,
+                                    .ms-skin-black-2 .ms-video-btn {
+                                        width: 45px;
+                                        height: 45px;
+                                        background: url(black-skin-2.png) black no-repeat -16px -103px;
+                                        border: solid 3px rgb(255, 255, 255);
+                                        border-color: rgba(255, 255, 255, 0.4);
+                                        /* -webkit-background-clip: padding-box; */
+                                        top: 50%;
+                                        left: 50%;
+                                        margin: -23px 0 0 -23px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-slide .ms-slide-vpbtn:hover,
+                                    .ms-skin-black-2 .ms-video-btn:hover {
+                                        background-color: #3D3D3D;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-slide .ms-slide-vcbtn {
+                                        width: 25px;
+                                        height: 25px;
+                                        background: url(black-skin-2.png) black no-repeat -27px -36px;
+                                        border: solid 2px white;
+                                        border-color: rgba(255, 255, 255, 0.4);
+                                        top: 15px;
+                                        right: 15px;
+                                    }
+                                    
+                                    .ms-skin-black-2.round-skin .ms-slide .ms-slide-vcbtn {
+                                        border-radius: 50px;
+                                    }
+                                    /* controls */
+                                    
+                                    .ms-skin-black-2 .ms-nav-next,
+                                    .ms-skin-black-2 .ms-nav-prev {
+                                        position: absolute;
+                                        cursor: pointer;
+                                        z-index: 10;
+                                        width: 45px;
+                                        height: 45px;
+                                        background: url(images/right-arrow.png) no-repeat;
+                                        -webkit-background-clip: padding-box;
+                                        -moz-background-clip: padding-box;
+                                        background-clip: padding-box;
+                                        background-position: -88px -26px;
+                                        top: 50%;
+                                        left: 30px;
+                                        margin-top: -22px;
+                                    }
+                                    
+                                    .ms-skin-black-2.round-skin .ms-nav-next,
+                                    .ms-skin-black-2.round-skin .ms-nav-prev,
+                                    .ms-skin-black-2.round-skin .ms-slide .ms-slide-vpbtn,
+                                    .ms-skin-black-2.round-skin .ms-video-btn {
+                                        border-radius: 90px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-nav-next:hover,
+                                    .ms-skin-black-2 .ms-nav-prev:hover {
+                                        background-color: #3d3d3d;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-nav-next {
+                                        right: 30px;
+                                        left: auto;
+                                        background-position: -86px -103px;
+                                        margin-top: -33px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-thumb-frame-selected {
+                                        opacity: 0.6;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-thumb-list.ms-dir-h {
+                                        bottom: -60px;
+                                        width: 100%;
+                                        height: 60px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-thumb-list.ms-dir-v {
+                                        height: 100%;
+                                        width: 60px;
+                                        right: -60px;
+                                        top: 0;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-thumb-frame {
+                                        cursor: pointer;
+                                        float: left;
+                                        width: 60px;
+                                        height: 60px;
+                                        margin: 1px 0 0 1px;
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-bullets.ms-dir-h {
+                                        position: absolute;
+                                        bottom: 20px;
+                                        right: 0%;
+                                        left: 0;
+                                        width: 100px;
+                                        display: block;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-bullets.ms-dir-h .ms-bullets-count {
+                                        position: relative;
+                                        right: -50%;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-bullet {
+                                        width: 10px;
+                                        height: 10px;
+                                        background: #fff;
+                                        margin: 4px;
+                                        background-position: -34px -117px;
+                                    }
+                                    
+                                    .ms-skin-black-2.round-skin .ms-bullet {
+                                        border-radius: 15px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-bullet-selected {
+                                        background-color: #e7272d;
+                                        border-color: white;
+                                        border-color: #FFF;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-sbar {
+                                        position: absolute;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-sbar.ms-dir-h {
+                                        left: 10px;
+                                        right: 10px;
+                                        top: 5px
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-sbar.ms-dir-v {
+                                        top: 10px;
+                                        bottom: 10px;
+                                        right: 5px
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-sbar .ms-bar {
+                                        height: 4px;
+                                        background: #DD00FF;
+                                        border-radius: 4px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-sbar.ms-dir-v .ms-bar {
+                                        width: 4px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-timerbar {
+                                        width: 100%;
+                                        bottom: 0px;
+                                        position: absolute;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-time-bar {
+                                        height: 3px;
+                                        background: #000000;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-ctimer {
+                                        position: absolute;
+                                        top: 30px;
+                                        left: 30px;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip {
+                                        position: absolute;
+                                        z-index: 110;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-top .ms-tooltip-arrow,
+                                    .ms-skin-black-2 .ms-tooltip-bottom .ms-tooltip-arrow {
+                                        border-left: solid 10px transparent;
+                                        border-right: solid 10px transparent;
+                                        position: absolute;
+                                        left: 50%;
+                                        margin-left: -10px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-top .ms-tooltip-arrow {
+                                        border-top: solid 10px;
+                                        border-top-color: silver;
+                                        border-top-color: rgba(240, 240, 240, 0.88);
+                                        bottom: -10px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-bottom .ms-tooltip-arrow {
+                                        border-bottom: solid 10px;
+                                        border-bottom-color: silver;
+                                        border-bottom-color: rgba(240, 240, 240, 0.88);
+                                        top: -10px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-right .ms-tooltip-arrow,
+                                    .ms-skin-black-2 .ms-tooltip-left .ms-tooltip-arrow {
+                                        border-top: solid 10px transparent;
+                                        border-bottom: solid 10px transparent;
+                                        position: absolute;
+                                        top: 50%;
+                                        margin-top: -10px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-right .ms-tooltip-arrow {
+                                        border-right: solid 10px;
+                                        border-right-color: silver;
+                                        border-right-color: rgba(240, 240, 240, 0.88);
+                                        left: -10px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-left .ms-tooltip-arrow {
+                                        border-left: solid 10px;
+                                        border-left-color: silver;
+                                        border-left-color: rgba(240, 240, 240, 0.88);
+                                        right: -10px;
+                                    }
+                                    
+                                    @keyframes point-anim {
+                                        0% {
+                                            transform: scale(0.5);
+                                            -webkit-transform: scale(0.5);
+                                            -moz-transform: scale(0.5);
+                                            -o-transform: scale(0.5);
+                                            -ms-transform: scale(0.5);
+                                            opacity: 1;
+                                        }
+                                        100% {
+                                            transform: scale(0.5);
+                                            -webkit-transform: scale(0.5);
+                                            -moz-transform: scale(1.5);
+                                            -o-transform: scale(1.5);
+                                            -ms-transform: scale(1.5);
+                                            opacity: 0;
+                                        }
+                                    }
+                                    
+                                    @-webkit-keyframes point-anim {
+                                        0% {
+                                            -webkit-transform: scale(0.5);
+                                            opacity: 1;
+                                        }
+                                        100% {
+                                            -webkit-transform: scale(1.5);
+                                            opacity: 0;
+                                        }
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-point {
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-point .ms-point-center {
+                                        width: 12px;
+                                        height: 12px;
+                                        border-radius: 15px;
+                                        border: solid 2px #BBB;
+                                        background: white;
+                                        margin: -8px 0 0 -8px;
+                                        position: absolute;
+                                        z-index: 5;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-point .ms-point-border {
+                                        width: 22px;
+                                        height: 22px;
+                                        background: black;
+                                        background: rgba(0, 0, 0, 0.36);
+                                        margin: -11px 0 0 -11px;
+                                        position: absolute;
+                                        border-radius: 15px;
+                                        animation: point-anim 1.5s infinite;
+                                        -moz-animation: point-anim 1.5s infinite;
+                                        -webkit-animation: point-anim 1.5s infinite;
+                                        -o-animation: point-anim 1.5s infinite;
+                                    }
+                                    /* In Android browser, using css animations over slider causes some crashes */
+                                    
+                                    .ms-android.ms-skin-black-2 .ms-tooltip-point .ms-point-border {
+                                        animation: none;
+                                        -moz-animation: none;
+                                        -webkit-animation: none;
+                                        -o-animation: none;
+                                    }
+                                    
+                                    .ms-ie7.ms-skin-black-2 .ms-tooltip-point .ms-point-border,
+                                    .ms-ie8.ms-skin-black-2 .ms-tooltip-point .ms-point-border {
+                                        display: none;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip {
+                                        max-width: 200px;
+                                    }
+                                    
+                                    .ms-skin-black-2 .ms-tooltip-cont {
+                                        padding: 10px;
+                                        background: silver;
+                                        background: rgba(240, 240, 240, 0.88);
+                                        text-shadow: 0 1px 0px white;
+                                        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.04);
+                                    }
+                                    /* retina */
+                                    
+                                    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+                                    only screen and ( min--moz-device-pixel-ratio: 2),
+                                    only screen and ( -o-min-device-pixel-ratio: 2/1),
+                                    only screen and ( min-device-pixel-ratio: 2),
+                                    only screen and ( min-resolution: 192dpi),
+                                    only screen and ( min-resolution: 2dppx) {
+                                        .ms-skin-black-2 .ms-slide .ms-slide-vpbtn,
+                                        .ms-skin-black-2 .ms-video-btn,
+                                        .ms-skin-black-2 .ms-slide .ms-slide-vcbtn,
+                                        .ms-skin-black-2 .ms-nav-next,
+                                        .ms-skin-black-2 .ms-nav-prev {
+                                            background-image: url(black-skin-2-retina.png);
+                                            background-size: 152px 225px;
+                                        }
+                                    }
+                                    
+                                    .master-slider {
+                                        font-family: 'Roboto-Regular';
+                                        min-height: 560px;
+                                        position: relative;
+                                    }
+                                    
+                                    .banner-button {
+                                        font-family: 'Roboto-Regular';
+                                        background-color: #f2555b;
+                                        border-radius: 3px;
+                                        color: #fff!important;
+                                        cursor: pointer;
+                                        display: block;
+                                        font-size: 18px;
+                                        line-height: 12px;
+                                        margin: 0 auto;
+                                        padding: 18px 25px;
+                                        text-align: center;
+                                        border: 1px solid #f2555b;
+                                        width: 154px;
+                                        -webkit-transition: all 0.6s ease 0s;
+                                        -moz-transition: all 0.6s ease 0s;
+                                        -o-transition: all 0.6s ease 0s;
+                                        transition: all 0.6s ease 0s!important;
+                                    }
+                                    
+                                    .banner-button i {
+                                        color: #fff;
+                                        padding-right: 8px;
+                                    }
+                                    
+                                    .banner-button:hover {
+                                        background-color: transparent;
+                                        color: #000!important;
+                                    }
+                                    
+                                    .ms-layer.light-title {
+                                        margin: 0 0 30px 0;
+                                        float: left;
+                                        font-weight: 300;
+                                        font-size: 52px!important;
+                                        color: #FFF;
+                                        background: rgba(0, 0, 0, 0.5);
+                                        padding: 5px 10px;
+                                        font-family: 'Roboto-Regular';
+                                    }
+                                    
+                                    .video_link {
+                                        position: relative;
+                                        max-width: 640px;
+                                        width: 80%;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .wrapper {
+                                        overflow: hidden;
+                                        position: relative;
+                                        height: 100%;
+                                    }
+                                    
+                                    .video_link iframe {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                    
+                                    .ms-layer.normal-desc i {
+                                        color: #fff;
+                                    }
+                                    
+                                    .ms-layer.text-box {
+                                        width: 31.6%;
+                                        height: 12%;
+                                        margin: 0 0 10px 0;
+                                        padding: 0;
+                                        background: rgba(95, 156, 75, 0.9);
+                                    }
+                                    
+                                    .ms-layer.normal-title {
+                                        margin: 0;
+                                    }
+                                    
+                                    .light-title {
+                                        font-size: 40pt;
+                                    }
+                                    
+                                    .ms-slide-layers {
+                                        overflow: visible !important;
+                                    }
+                                    
+                                    .ms-layer.video {
+                                        left: 0 !important;
+                                        padding-left: 0 !important;
+                                        width: 100%;
+                                        top: 380px!important;
+                                    }
+                                    
+                                    @media (max-width:1169px) {
+                                        .master-slider {
+                                            min-height: auto;
+                                        }
+                                    }
+                                    
+                                    @media (max-width:1160px) {
+                                        .ms-slide-layers {
+                                            max-width: 98%!important;
+                                            margin: 0 auto!important;
+                                        }
+                                    }
+                                    /* img-banner */
+                                    
+                                    .ms-layer.img-banner {
+                                        max-width: 100%;
+                                        width: 85%!important;
+                                        margin: 0 auto!important;
+                                        height: auto!important;
+                                    }
+                                    /* 3rd section start */
+                                    
+                                    .table-reservation2-area .table-reservation2-inner {
+                                        display: flex;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-left {
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        right: 0;
+                                        margin: 0 auto;
+                                        z-index: 8;
+                                        background-color: #e7272d;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-left .reservation-form2 {
+                                        background: url(images/reservation2-back.png);
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        padding: 50px 30px;
+                                        z-index: 1;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-left .reservation-form2 span {
+                                        font-size: 30px;
+                                        color: #ffffff;
+                                        text-transform: capitalize;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-left .reservation-form2 h2 {
+                                        font-size: 40px;
+                                        color: #ffffff;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-left .reservation-form2 .reservation-input-box {
+                                        position: relative;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-left .reservation-form2 .reservation-input-box .form-control {
+                                        margin-bottom: 15px;
+                                        background: transparent;
+                                        border-radius: 0;
+                                        border: 1px solid #ffffff;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-left .reservation-form2 .reservation-input-box input::placeholder {
+                                        padding-right: 30px;
+                                        color: #ffffff;
+                                        height: 40px;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-left .reservation-form2 .reservation-input-box i {
+                                        position: absolute;
+                                        right: 0px;
+                                        padding: 15px 12px;
+                                        color: #ffffff;
+                                        font-size: 16px;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-left .reservation-form2 .reservation-input-box textarea::placeholder {
+                                        color: #ffffff;
+                                    }
+                                    
+                                    .book-now-btn {
+                                        border: none;
+                                        text-align: center;
+                                        font-family: 'Oswald', sans-serif;
+                                        color: #222222;
+                                        padding: 12px 0;
+                                        width: 100%;
+                                        background: #ffffff;
+                                        text-transform: uppercase;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        display: inline-block;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-right {
+                                        margin-left: 30px;
+                                        padding: 130px 0;
+                                        position: relative;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-right h2 {
+                                        font-size: 60px;
+                                        color: #222222;
+                                        text-transform: uppercase;
+                                        margin-bottom: 0;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-right p {
+                                        font-size: 16px;
+                                        width: 293px;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-right p span {
+                                        color: #e7272d;
+                                        font-size: 18px;
+                                    }
+                                    
+                                    .table-reservation2-area .table-reservation2-right .reservation2-banner {
+                                        position: absolute;
+                                        right: 0;
+                                        bottom: 0;
+                                    }
+                                    /*  owl carousel for special dishes today section*/
+                                    
+                                    .special-dish-area {
+                                        height: 730px;
+                                        padding: 85px 0 70px;
+                                        background: url(../images/special-dishes-back.jpeg);
+                                        /* background: url(/Users/suneetha/RESTAURANT/images/special-dishes-back.jpeg); */
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                    }
+                                    
+                                    .title {
+                                        text-transform: uppercase;
+                                        color: #ffffff;
+                                        text-align: center;
+                                        font-family: 'Oswald', sans-serif;
+                                    }
+                                    
+                                    .subtitle-color {
+                                        text-align: center;
+                                        display: block;
+                                        text-transform: uppercase;
+                                        color: #e7272d;
+                                        position: relative;
+                                        width: 550px;
+                                        font-size: 18px;
+                                        letter-spacing: 4px;
+                                        margin: 0 auto;
+                                        padding-bottom: 50px;
+                                    }
+                                    
+                                    .subtitle-color:before {
+                                        content: "";
+                                        background: #707070;
+                                        height: 1px;
+                                        width: 90px;
+                                        position: absolute;
+                                        top: 12px;
+                                        left: 0;
+                                    }
+                                    
+                                    .subtitle-color:after {
+                                        content: "";
+                                        background: #707070;
+                                        height: 1px;
+                                        width: 90px;
+                                        position: absolute;
+                                        top: 12px;
+                                        right: 0;
+                                    }
+                                    
+                                    .title-small {
+                                        font-size: 20px;
+                                        text-transform: capitalize;
+                                        font-weight: 700;
+                                        margin: 25px 0;
+                                        width: 200px;
+                                    }
+                                    
+                                    .title-small a {
+                                        color: #ffffff;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .title-small a:hover {
+                                        text-decoration: none;
+                                    }
+                                    
+                                    .item {
+                                        width: 50%;
+                                        display: inline-block;
+                                        height: auto;
+                                        position: relative;
+                                        text-align: center;
+                                        margin: 0 40px;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .item span {
+                                        position: absolute;
+                                        top: 0;
+                                        right: 20px;
+                                        border-radius: 50%;
+                                        height: 50px;
+                                        width: 50px;
+                                        line-height: 50px;
+                                        background: #e7272d;
+                                        color: #ffffff;
+                                        z-index: 1;
+                                    }
+                                    
+                                    .item p {
+                                        color: #e9e9e9;
+                                        font-size: 16px;
+                                        margin-bottom: 30px;
+                                        width: 170px;
+                                    }
+                                    
+                                    .item img {
+                                        width: 170px !important;
+                                    }
+                                    
+                                    .title-bar-small-center:before {
+                                        content: "";
+                                        height: 2px;
+                                        width: 40px;
+                                        background: #e7272d;
+                                        position: absolute;
+                                        left: 0;
+                                        right: -7px;
+                                        top: 230px;
+                                        bottom: 135px;
+                                        margin: 0 auto;
+                                        z-index: 1;
+                                    }
+                                    
+                                    .ghost-semi-color-btn {
+                                        font-family: 'Oswald', sans-serif;
+                                        border: 2px solid #e7272d;
+                                        color: #ffffff;
+                                        padding: 10px 44px;
+                                        background: transparent;
+                                        text-transform: uppercase;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        display: inline-block;
+                                        margin-left: 10px;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .ghost-semi-color-btn:hover {
+                                        background: #e7272d;
+                                        color: #ffffff;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                        text-decoration: none;
+                                    }
+                                    /* special dishes today section end */
+                                    /* tasty menu today starts*/
+                                    
+                                    .tasty-menu-area {
+                                        padding: 85px 0 90px;
+                                        position: relative;
+                                        background: #e7272d url(images/tasty-menu-back.png);
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                    }
+                                    
+                                    .subtitle {
+                                        color: #ffffff;
+                                    }
+                                    
+                                    .subtitle:before,
+                                    .subtitle:after {
+                                        content: "";
+                                        background: #ffffff;
+                                    }
+                                    
+                                    .tasty-menu-area .tasty-menu-inner {
+                                        padding: 70px 40px 0 40px;
+                                        background: #ffffff;
+                                        position: relative;
+                                        z-index: 2;
+                                        display: flex;
+                                        border-right: 10px solid #d32f2f;
+                                        border-bottom: 10px solid #d32f2f;
+                                    }
+                                    
+                                    .tasty-menu-area .tasty-menu-inner:before {
+                                        border: 10px solid #f8f8f8;
+                                        content: "";
+                                        position: absolute;
+                                        height: 96%;
+                                        width: 97%;
+                                        top: 20px;
+                                        left: 0;
+                                        right: 0;
+                                        margin: 0 auto;
+                                        z-index: -1;
+                                    }
+                                    
+                                    .inner-sub-title-center {
+                                        text-align: center;
+                                        font-size: 30px;
+                                        color: #222222;
+                                        text-transform: uppercase;
+                                        font-family: 'Oswald', sans-serif;
+                                    }
+                                    
+                                    .title-bar-full-width {
+                                        position: relative;
+                                    }
+                                    
+                                    .title-bar-full-width:before {
+                                        content: "";
+                                        height: 2px;
+                                        width: 97%;
+                                        background: #e7272d;
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: -12px;
+                                        z-index: 1;
+                                    }
+                                    
+                                    .tasty-menu-area .tasty-menu-inner ul {
+                                        padding: 50px 10px;
+                                    }
+                                    
+                                    .tasty-menu-area .tasty-menu-inner ul li {
+                                        margin-bottom: 17px;
+                                    }
+                                    
+                                    .tasty-menu-area .tasty-menu-inner ul li .media-body h4 a {
+                                        color: #222222;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .tasty-menu-area .tasty-menu-inner ul li .media-body h4 a:hover {
+                                        color: #e7272d;
+                                        text-decoration: none;
+                                    }
+                                    
+                                    .tasty-menu-area .tasty-menu-inner ul li .media-body {
+                                        padding: 10px;
+                                        position: relative;
+                                        margin-left: 10px;
+                                    }
+                                    
+                                    .tasty-menu-area .tasty-menu-inner ul li .media-body h4 {
+                                        font-size: 15px;
+                                        border-bottom: 1px dashed #707070;
+                                        padding-bottom: 15px;
+                                        margin-bottom: 10px;
+                                    }
+                                    
+                                    .tasty-menu-area .tasty-menu-inner ul li .media-body p {
+                                        color: #707070;
+                                        font-size: 12px;
+                                    }
+                                    
+                                    .tasty-menu-area .tasty-menu-inner ul li .media-body span {
+                                        color: #e7272d;
+                                        position: absolute;
+                                        right: 0px;
+                                        top: 7px;
+                                        font-size: 18px;
+                                    }
+                                    /* our expect chef section starts */
+                                    
+                                    .expert-chefs-area {
+                                        padding: 85px 0 90px;
+                                        position: relative;
+                                        background: #f8f8f8;
+                                    }
+                                    
+                                    .expert-chefs-area .section-back {
+                                        position: absolute;
+                                        bottom: 14%;
+                                        z-index: 1;
+                                        right: 5%;
+                                    }
+                                    
+                                    .chef {
+                                        color: #222222;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content {
+                                        text-align: center;
+                                        padding: 15px 0 0 0;
+                                        background: #e7272d;
+                                        width: 300px;
+                                        position: absolute;
+                                        bottom: -76px;
+                                        z-index: 2;
+                                        -webkit-transition: all 0.8s ease-out;
+                                        -moz-transition: all 0.8s ease-out;
+                                        -ms-transition: all 0.8s ease-out;
+                                        -o-transition: all 0.8s ease-out;
+                                        transition: all 0.8s ease-out;
+                                    }
+                                    
+                                    .expert-chefs-box:hover .expert-chefs-box-content {
+                                        background: #222222;
+                                        bottom: 2px;
+                                        -webkit-transition: all 0.4s ease-out;
+                                        -moz-transition: all 0.4s ease-out;
+                                        -ms-transition: all 0.4s ease-out;
+                                        -o-transition: all 0.4s ease-out;
+                                        transition: all 0.4s ease-out;
+                                    }
+                                    
+                                    .item .expert-chefs-box .expert-chefs-box-content span {
+                                        display: none;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content span {
+                                        position: absolute;
+                                        z-index: 1;
+                                        top: 0px;
+                                        width: 0;
+                                        height: 0;
+                                        border-left: 10px solid transparent;
+                                        border-right: 10px solid transparent;
+                                        border-bottom: 10px solid #222222;
+                                        opacity: 0;
+                                    }
+                                    
+                                    .expert-chefs-box:hover .expert-chefs-box-content span {
+                                        opacity: 1;
+                                        top: -10px;
+                                        -webkit-transition: all 1s ease-out;
+                                        -moz-transition: all 1s ease-out;
+                                        -ms-transition: all 1s ease-out;
+                                        -o-transition: all 1s ease-out;
+                                        transition: all 1s ease-out;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content h3 {
+                                        font-size: 24px;
+                                        margin-bottom: 10px;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content h3 a {
+                                        color: #ffffff;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content h3 a:hover {
+                                        color: #e7272d;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content p {
+                                        color: #ffffff;
+                                        position: relative;
+                                        margin-left: 72px;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content p:before {
+                                        content: "";
+                                        background: #e7272d;
+                                        height: 1px;
+                                        width: 170px;
+                                        z-index: 3;
+                                        position: absolute;
+                                        left: 0;
+                                        right: 0;
+                                        margin: 0 auto;
+                                        bottom: -15px;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content ul {
+                                        padding: 15px 0;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content ul li {
+                                        display: inline-block;
+                                        margin: 0 10px;
+                                        height: 40px;
+                                        width: 40px;
+                                        line-height: 40px;
+                                        border-radius: 50%;
+                                        background: transparent;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content ul li:hover {
+                                        background: #e7272d;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .expert-chefs-box .expert-chefs-box-content ul li i {
+                                        color: #ffffff;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .expert-chefs-box img {
+                                        display: block !important;
+                                        width: 300px !important;
+                                    }
+                                    /* award section start */
+                                    
+                                    .award1-area {
+                                        padding: 97px 0 65px;
+                                        text-align: center;
+                                        background: url(../images/award1-back.jpeg);
+                                        /* background: url(/Users/suneetha/RESTAURANT/images/award1-back.jpeg); */
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        position: relative;
+                                    }
+                                    
+                                    .award1-area:before {
+                                        content: "";
+                                        background-color: rgba(34, 34, 34, 0.5);
+                                        position: absolute;
+                                        top: 0;
+                                        height: 100%;
+                                        width: 100%;
+                                        left: 0;
+                                        right: 0;
+                                        margin: 0 auto;
+                                    }
+                                    
+                                    .award1-area .award1-area-box {
+                                        margin-bottom: 30px;
+                                    }
+                                    
+                                    .award1-area .award1-area-box i {
+                                        color: #e7272d;
+                                        font-size: 36px;
+                                        margin-bottom: 10px;
+                                    }
+                                    
+                                    .award1-area .award1-area-box h2 {
+                                        color: #ffffff;
+                                        font-size: 40px;
+                                        margin-bottom: 5px;
+                                    }
+                                    
+                                    .award1-area .award1-area-box p {
+                                        color: #b2b2b2;
+                                        text-transform: uppercase;
+                                        margin-bottom: 5px;
+                                    }
+                                    /* recipe of teh day section starts */
+                                    
+                                    .recipe-of-the-day2-area {
+                                        padding: 85px 0 90px;
+                                        position: relative;
+                                    }
+                                    
+                                    .recipe-of-the-day2-area .section-back {
+                                        position: absolute;
+                                        bottom: 5%;
+                                        z-index: 1;
+                                        right: 5%;
+                                    }
+                                    
+                                    .title-color {
+                                        text-transform: uppercase;
+                                        text-align: center;
+                                        font-family: 'Oswald', sans-serif;
+                                    }
+                                    
+                                    .recipe-box2 {
+                                        width: 300px;
+                                        margin: 15px;
+                                        overflow: hidden;
+                                        background: #f8f8f8;
+                                        position: relative;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .recipe-box2:hover .recipe-box2-social {
+                                        opacity: 1;
+                                        -moz-transform: scale(1) translateY(0px);
+                                        -webkit-transform: scale(1) translateY(0px);
+                                        -o-transform: scale(1) translateY(0px);
+                                        -ms-transform: scale(1) translateY(0px);
+                                        transform: scale(1) translateY(0px);
+                                        -webkit-transition: all 0.8s ease-out;
+                                        -moz-transition: all 0.8s ease-out;
+                                        -ms-transition: all 0.8s ease-out;
+                                        -o-transition: all 0.8s ease-out;
+                                        transition: all 0.8s ease-out;
+                                    }
+                                    
+                                    .recipe-box2:hover {
+                                        -webkit-box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+                                        -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+                                        box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 40%);
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .recipe-of-the-day2-area .item img {
+                                        width: 300px !important;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-social {
+                                        opacity: 0;
+                                        left: 0;
+                                        margin: 0 auto;
+                                        opacity: 1;
+                                        position: absolute;
+                                        right: 0;
+                                        text-align: center;
+                                        top: 20%;
+                                        z-index: 2;
+                                        -moz-transform: scale(1) translateY(-150px);
+                                        -webkit-transform: scale(1) translateY(-150px);
+                                        -o-transform: scale(1) translateY(-150px);
+                                        -ms-transform: scale(1) translateY(-150px);
+                                        transform: scale(1) translateY(-150px);
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-social li {
+                                        background: #ffffff;
+                                        border-radius: 50%;
+                                        height: 50px;
+                                        width: 50px;
+                                        display: inline-block;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-social li:hover {
+                                        background: #ffcdd2;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-social li a {
+                                        padding: 19px;
+                                        border-radius: 50%;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-social li a i {
+                                        line-height: 50px;
+                                        color: #222222;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-social li:hover a i {
+                                        color: #e7272d;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-img-holder {
+                                        overflow: hidden;
+                                        position: relative;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-img-holder:after {
+                                        height: 100%;
+                                        width: 100%;
+                                        top: 0;
+                                        background-color: rgba(231, 39, 45, 0.8);
+                                        position: absolute;
+                                        z-index: 1;
+                                        content: "";
+                                        left: 0;
+                                        right: 0;
+                                        display: block;
+                                        opacity: 0;
+                                        -moz-transform: scale(1) translateY(-300px);
+                                        -webkit-transform: scale(1) translateY(-300px);
+                                        -o-transform: scale(1) translateY(-300px);
+                                        -ms-transform: scale(1) translateY(-300px);
+                                        transform: scale(1) translateY(-300px);
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .recipe-box2:hover .recipe-box2-img-holder:after {
+                                        opacity: 1;
+                                        -moz-transform: scale(1) translateY(0px);
+                                        -webkit-transform: scale(1) translateY(0px);
+                                        -o-transform: scale(1) translateY(0px);
+                                        -ms-transform: scale(1) translateY(0px);
+                                        transform: scale(1) translateY(0px);
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-bottom-content-holder {
+                                        padding: 30px 35px 10px 35px;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-bottom-content-holder h3 {
+                                        margin-bottom: 15px;
+                                        font-size: 20px;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-bottom-content-holder h3 a {
+                                        color: #222222;
+                                        -webkit-transition: all 0.5s ease-out;
+                                        -moz-transition: all 0.5s ease-out;
+                                        -ms-transition: all 0.5s ease-out;
+                                        -o-transition: all 0.5s ease-out;
+                                        transition: all 0.5s ease-out;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-bottom-content-holder p {
+                                        color: gray;
+                                        font-size: 13px;
+                                        margin-bottom: 30px;
+                                        width: 229px;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-bottom-content-holder ul {
+                                        margin-bottom: 15px;
+                                        padding-bottom: 12px;
+                                        margin-left: -130px;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-bottom-content-holder h3 a:hover {
+                                        color: #e7272d;
+                                        -webkit-transition: all 0.5s ease-out;
+                                        -moz-transition: all 0.5s ease-out;
+                                        -ms-transition: all 0.5s ease-out;
+                                        -o-transition: all 0.5s ease-out;
+                                        transition: all 0.5s ease-out;
+                                        text-decoration: none;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-bottom-content-holder ul li a h5 {
+                                        color: #222222;
+                                        font-size: 15px;
+                                        position: absolute;
+                                        right: 90px;
+                                        margin-top: -23px;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-bottom-content-holder ul li a:hover {
+                                        color: #e7272d;
+                                        text-decoration: none;
+                                    }
+                                    
+                                    .recipe-box2 .recipe-box2-bottom-content-holder ul li a i {
+                                        color: #e7272d;
+                                        margin-right: 8px;
+                                        font-size: 16px;
+                                    }
+                                    /* client reviews section */
+                                    
+                                    .client-reviews-area {
+                                        position: relative;
+                                        background: url(images/back.png);
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                    }
+                                    
+                                    .client-reviews-area:before {
+                                        content: "";
+                                        height: 100%;
+                                        width: 100%;
+                                        background-color: #e7272d;
+                                        position: absolute;
+                                        top: 0;
+                                        z-index: -1;
+                                    }
+                                    
+                                    .client-reviews-area>div {
+                                        padding: 0;
+                                    }
+                                    
+                                    .client-reviews-area>div .row>div {
+                                        padding: 0;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-left img {
+                                        width: 100%;
+                                    }
+                                    
+                                    .client-reviews-right .item img {
+                                        width: 100px !important;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right {
+                                        padding: 55px 0 70px;
+                                        margin-left: 65px;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right h2 {
+                                        font-size: 40px;
+                                        text-transform: uppercase;
+                                        color: #ffffff;
+                                        margin-bottom: 5px;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right p {
+                                        font-size: 18px;
+                                        color: #ffffff;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul {
+                                        margin-top: 55px;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul li {
+                                        position: relative;
+                                        margin-bottom: 35px;
+                                        width: 55%;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul li .media a {
+                                        padding-right: 30px;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul li .media-body p {
+                                        font-size: 15px;
+                                        margin-bottom: 0;
+                                        text-align: justify;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right p {
+                                        font-size: 18px;
+                                        color: #ffffff;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul li .media-body h3 {
+                                        font-size: 20px;
+                                        letter-spacing: 1px;
+                                        margin-bottom: 12px;
+                                        margin-left: -140px;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul li .media-body h3 a {
+                                        color: #ffffff;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul li .media-body p {
+                                        font-size: 15px;
+                                        margin-bottom: 0;
+                                        width: 276px;
+                                        text-align: justify;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul li .media-body .rating {
+                                        position: absolute;
+                                        z-index: 3;
+                                        top: 0;
+                                        right: -195px;
+                                        margin-top: 0;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul li .media-body .rating li {
+                                        display: inline;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul li .media-body .rating li i {
+                                        color: #ffcf3b;
+                                    }
+                                    
+                                    .client-reviews-area .client-reviews-right ul li .media-body .rating li:last-child i {
+                                        color: #ffffff;
+                                    }
+                                    /* brands section */
+                                    
+                                    .brand-area {
+                                        display: flex;
+                                    }
+                                    
+                                    .brand-area {
+                                        padding: 50px 45px 40px 0px;
+                                        position: relative;
+                                        text-align: center;
+                                    }
+                                    
+                                    .brand-area .item {
+                                        margin-left: -35px;
+                                    }
+                                    
+                                    .brand-area .section-back {
+                                        position: absolute;
+                                        top: 38%;
+                                        transform: translateY(-50%);
+                                        z-index: 1;
+                                        right: 221px;
+                                    }
+                                    
+                                    .brand-area .brand-area-box {
+                                        width: 170px;
+                                        padding: 5px;
+                                        border: 1px solid #f8f8f8;
+                                        -webkit-transition: all 0.5s ease-out;
+                                        -moz-transition: all 0.5s ease-out;
+                                        -ms-transition: all 0.5s ease-out;
+                                        -o-transition: all 0.5s ease-out;
+                                        transition: all 0.5s ease-out;
+                                    }
+                                    
+                                    .brand-area .brand-area-box:hover {
+                                        width: 170px;
+                                        border: 1px solid #e7272d;
+                                        -webkit-transition: all 0.5s ease-out;
+                                        -moz-transition: all 0.5s ease-out;
+                                        -ms-transition: all 0.5s ease-out;
+                                        -o-transition: all 0.5s ease-out;
+                                        transition: all 0.5s ease-out;
+                                    }
+                                    /* footer section */
+                                    
+                                    .footer-area-top {
+                                        padding: 92px 0 55px;
+                                        background: #151515;
+                                    }
+                                    
+                                    .footer-area-top .footer-box {
+                                        padding-right: 30px;
+                                        margin-bottom: 30px;
+                                    }
+                                    
+                                    .footer-area-top h3 {
+                                        font-size: 26px;
+                                        margin-bottom: 55px;
+                                        text-transform: uppercase;
+                                        color: #ffffff;
+                                        font-family: 'Oswald', sans-serif;
+                                    }
+                                    
+                                    .title-bar-footer {
+                                        position: relative;
+                                    }
+                                    
+                                    .title-bar-footer:before {
+                                        content: "";
+                                        height: 3px;
+                                        width: 45px;
+                                        background: #e7272d;
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: -25px;
+                                        z-index: 1;
+                                    }
+                                    
+                                    .footer-area-top .footer-about p {
+                                        color: #d7d7d7;
+                                        font-size: 15px;
+                                    }
+                                    
+                                    .footer-area-top .footer-social {
+                                        margin-top: 40px;
+                                    }
+                                    
+                                    .footer-area-top .footer-social li {
+                                        display: inline-block;
+                                        margin-right: 5px;
+                                    }
+                                    
+                                    .footer-area-top .footer-social li a {
+                                        line-height: 50px;
+                                        background: #e7272d;
+                                        width: 50px;
+                                        height: 50px;
+                                        border-radius: 50%;
+                                        display: block;
+                                        text-align: center;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .footer-area-top .footer-social li a i {
+                                        color: #ffffff;
+                                        font-size: 17px;
+                                    }
+                                    
+                                    .footer-area-top .footer-blog-post a img {
+                                        border-radius: 5px;
+                                        border: 1px solid #d7d7d7;
+                                    }
+                                    
+                                    .footer-area-top .footer-blog-post .media-body h4 {
+                                        font-size: 15px;
+                                        letter-spacing: 1px;
+                                        margin-bottom: 7px;
+                                        margin-left: 10px;
+                                        font-family: 'Oswald', sans-serif;
+                                        font-weight: 800;
+                                    }
+                                    
+                                    .footer-area-top .footer-blog-post .media-body h4 a {
+                                        color: #d7d7d7;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .footer-area-top .footer-blog-post .media-body h4 a:hover {
+                                        color: #e7272d;
+                                        text-decoration: none;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .footer-area-top .footer-blog-post .media-body p {
+                                        color: #e7272d;
+                                        font-size: 13px;
+                                        margin-bottom: 10px;
+                                        margin-left: 10px;
+                                    }
+                                    
+                                    .footer-area-top .opening-schedule li {
+                                        color: #d7d7d7;
+                                        font-size: 15px;
+                                        margin-bottom: 12px;
+                                    }
+                                    
+                                    .footer-area-top .opening-schedule li span {
+                                        float: right;
+                                    }
+                                    
+                                    .footer-area-top .opening-schedule li:nth-child(3) span {
+                                        color: #e7272d;
+                                    }
+                                    
+                                    .footer-area-bottom {
+                                        background: #e7272d;
+                                        padding: 20px 0 10px 0;
+                                    }
+                                    
+                                    .footer-area-bottom p {
+                                        color: #ffffff;
+                                        font-size: 15px;
+                                    }
+                                    
+                                    .footer-area-bottom p a {
+                                        color: #ffffff;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    
+                                    .footer-area-bottom p a:hover {
+                                        color: #757575;
+                                        text-decoration: none;
+                                        -webkit-transition: all 0.3s ease-out;
+                                        -moz-transition: all 0.3s ease-out;
+                                        -ms-transition: all 0.3s ease-out;
+                                        -o-transition: all 0.3s ease-out;
+                                        transition: all 0.3s ease-out;
+                                    }
+                                    /* media queries */
+                                    
+                                    .logo-mobile-menu {
+                                        display: none;
+                                    }
+                                    
+                                    .logo-area {
+                                        display: block;
+                                    }
+                                    
+                                    .menu {
+                                        display: none;
+                                    }
+                                    
+                                    .header-left {
+                                        display: none;
+                                    }
+                                    
+                                    .header-right {
+                                        display: none;
+                                    }
+                                    
+                                    .mobileheader {
+                                        display: none;
+                                    }
+                                    
+                                    @media only screen and (max-width: 767px) {
+                                        #btn-scrollup {
+                                            display: none;
+                                        }
+                                        /* mobile header */
+                                        .master-slider {
+                                            min-height: auto;
+                                            top: 30px;
+                                        }
+                                        .header-top {
+                                            position: absolute;
+                                            margin: 0 auto;
+                                            left: 0;
+                                            top: 0;
+                                            height: 10px;
+                                            width: 100%;
+                                            right: 0;
+                                            z-index: 99999;
+                                            background-color: rgba(0, 0, 0, 0.2);
+                                        }
+                                        .mobileheader {
+                                            display: block;
+                                        }
+                                        .logo-area {
+                                            display: none;
+                                        }
+                                        .logo-mobile-menu {
+                                            display: block;
+                                        }
+                                        .main-menu {
+                                            display: none;
+                                        }
+                                        .header-right {
+                                            display: block;
+                                        }
+                                        .header-left {
+                                            display: block;
+                                            float: left;
+                                            padding: 12px 0;
+                                        }
+                                        .sticky-logo {
+                                            padding: 16px;
+                                            position: absolute;
+                                            top: 7px;
+                                        }
+                                        .icon_menu {
+                                            width: 35px;
+                                            height: 30px;
+                                            position: absolute;
+                                            right: 15px;
+                                            top: 27px;
+                                            cursor: pointer;
+                                            display: block;
+                                            z-index: 999;
+                                            border: 1px solid black;
+                                            border-radius: 4px
+                                        }
+                                        .icon_menu-first,
+                                        .icon_menu-last,
+                                        .icon_menu-mid {
+                                            width: 22px;
+                                            height: 2px;
+                                            background-color: black;
+                                            margin: 6px auto;
+                                            transition: .4s
+                                        }
+                                        .change .icon_menu-first {
+                                            -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+                                            transform: rotate(-45deg) translate(-6px, 6px)
+                                        }
+                                        .change .icon_menu-mid {
+                                            opacity: 0
+                                        }
+                                        .change .icon_menu-last {
+                                            -webkit-transform: rotate(45deg) translate(-5px, -5px);
+                                            transform: rotate(45deg) translate(-5px, -5px)
+                                        }
+                                        .menu ul li,
+                                        .menu ul li a {
+                                            position: relative;
+                                            display: block;
+                                            width: 100%;
+                                        }
+                                        .menu,
+                                        .menu ul li a i,
+                                        .menu ul li a:after {
+                                            display: none
+                                        }
+                                        .sticky {
+                                            position: absolute!important
+                                        }
+                                        .menu {
+                                            z-index: 99;
+                                            width: 100%;
+                                            position: absolute;
+                                            top: 70px;
+                                            right: 0;
+                                            left: 0;
+                                            border-top: 1px solid #2a89cd
+                                        }
+                                        .menu ul ul li a:hover,
+                                        .menu ul ul li a:hover span,
+                                        .sticky .menu ul ul li a:hover {
+                                            color: #fff!important
+                                        }
+                                        .menu ul ul li a,
+                                        .menu ul ul li a span,
+                                        .sticky .menu ul ul li a {
+                                            border-left: 0;
+                                            color: #2a89cd
+                                        }
+                                        .menu ul li a,
+                                        .sticky .menu ul li a {
+                                            color: #2A89CD
+                                        }
+                                        .menu ul ul li a:hover,
+                                        .menu ul ul li a:hover i,
+                                        .sticky .menu ul ul li a:hover {
+                                            padding-left: 30px
+                                        }
+                                        .menu ul ul li a span,
+                                        .menu ul ul li a:hover span {
+                                            padding-left: 0
+                                        }
+                                        .menu ul li {
+                                            float: none
+                                        }
+                                        .menu ul li a {
+                                            margin: 0;
+                                            background-color: #fff;
+                                            border-bottom: 1px solid #5C96D6;
+                                            padding: 13px;
+                                            -webkit-transition: all .6s ease;
+                                            -moz-transition: all .6s ease;
+                                            -ms-transition: all .6s ease;
+                                            -o-transition: all .6s ease;
+                                            transition: all .6s ease
+                                        }
+                                        .menu ul li a:hover {
+                                            background-color: #60a0e7;
+                                            color: #fff
+                                        }
+                                        .menu ul ul li {
+                                            border-bottom: none!important
+                                        }
+                                        .menu ul ul li a,
+                                        .sticky .menu ul ul li a {
+                                            padding: 10px 30px
+                                        }
+                                        .menu ul ul,
+                                        .sticky .menu ul ul {
+                                            box-shadow: none
+                                        }
+                                        .menu ul li:hover ul {
+                                            display: block;
+                                            opacity: 1;
+                                            top: 0;
+                                            visibility: visible
+                                        }
+                                        .menu ul li ul,
+                                        .sticky .menu ul li ul {
+                                            position: static;
+                                            opacity: 1!important;
+                                            width: 100%!important;
+                                            display: block;
+                                            transition: 0;
+                                            top: 0;
+                                            visibility: visible
+                                        }
+                                        .accordion {
+                                            cursor: pointer;
+                                            outline: 0;
+                                            transition: all .4s ease-in-out;
+                                            z-index: 999;
+                                            position: absolute;
+                                            right: 0;
+                                            top: 6px;
+                                            height: 43px;
+                                            width: 40px;
+                                            background-color: #2A89CD;
+                                            border-left: 1px solid #2A89CD;
+                                            display: block
+                                        }
+                                        .accordion:after {
+                                            content: '\f067';
+                                            font-size: 20px;
+                                            color: #fff;
+                                            float: right;
+                                            margin-right: 10px;
+                                            margin-top: 14px;
+                                            font-family: "FontAwesome";
+                                            font-weight: 600
+                                        }
+                                        .accordion.active:after {
+                                            content: "\f068";
+                                            font-weight: 600
+                                        }
+                                        .sub-menu.show {
+                                            opacity: 1;
+                                            max-height: 500px;
+                                            z-index: 99;
+                                            overflow: hidden;
+                                            visibility: visible;
+                                            display: block;
+                                        }
+                                        .sub-menu {
+                                            background-color: #fff;
+                                            max-height: 0;
+                                            overflow: hidden;
+                                            transition: .6s ease-in-out;
+                                            opacity: 0;
+                                        }
+                                        .sticky.sub-menu,
+                                        .sub-menu {
+                                            border: 0;
+                                        }
+                                        .topHeader {
+                                            display: none;
+                                        }
+                                        .logo-area a {
+                                            padding: 6px 16px;
+                                            display: inline-block;
+                                        }
+                                        /* reservation section */
+                                        .table-reservation2-area {
+                                            background: none;
+                                        }
+                                        .table-reservation2-area .table-reservation2-left {
+                                            position: inherit;
+                                            margin-bottom: 30px;
+                                        }
+                                        .table-reservation2-area .table-reservation2-inner {
+                                            display: inherit;
+                                        }
+                                        .table-reservation2-area .table-reservation2-right {
+                                            padding: 0;
+                                            margin-left: 0;
+                                        }
+                                        .table-reservation2-area .table-reservation2-right .reservation2-banner {
+                                            display: none;
+                                        }
+                                        .table-reservation2-area .table-reservation2-right h2 {
+                                            font-size: 50px;
+                                            font-weight: 800;
+                                        }
+                                        /* special dishes today section */
+                                        .special-dish-area .special-dish-box span {
+                                            right: 0;
+                                            left: 0;
+                                            top: 0;
+                                            margin: 0 auto;
+                                        }
+                                        /* tasty menu today */
+                                        .tasty-menu-area .tasty-menu-inner {
+                                            padding: 70px 60px 0 50px;
+                                            display: inline-block;
+                                            margin-left: 15px;
+                                        }
+                                        .subtitle:before,
+                                        .subtitle:after {
+                                            display: none;
+                                        }
+                                        /* our expert chef section */
+                                        .subtitle-color:before,
+                                        .subtitle-color::after {
+                                            display: none;
+                                        }
+                                        /* client review section */
+                                        .client-reviews-area .client-reviews-right h2 {
+                                            margin-bottom: 20px;
+                                            margin-left: -15px;
+                                        }
+                                        .client-reviews-area .client-reviews-right ul {
+                                            margin-top: 30px;
+                                            margin-right: 40px;
+                                        }
+                                        .client-reviews-area .client-reviews-right ul li .media-body p {
+                                            width: 275px;
+                                        }
+                                        .client-reviews-area .client-reviews-right ul li {
+                                            margin-bottom: 30px;
+                                        }
+                                        .client-reviews-area .client-reviews-right ul li .media {
+                                            display: block;
+                                        }
+                                        .client-reviews-area .client-reviews-right ul li .media a {
+                                            float: inherit!important;
+                                        }
+                                        .client-reviews-area .client-reviews-right ul li .media-body h3 {
+                                            margin-top: 12px;
+                                            position: relative;
+                                            right: 276px;
+                                        }
+                                        /* brands section */
+                                        .mobile-bands {
+                                            display: flex;
+                                        }
+                                        .brand-area .section-back {
+                                            top: 57%;
+                                            right: 30px;
+                                        }
+                                        /* footer section */
+                                        .footer-area-top .footer-blog-post .media {
+                                            margin-bottom: 10px;
+                                        }
+                                    }
+                                    
+                                    @media only screen and (max-width: 480px) {
+                                        /* reservation section */
+                                        .table-reservation2-area {
+                                            padding: 60px 0;
+                                        }
+                                        /* special dishes today section */
+                                        .special-dish-area .special-dish-box {
+                                            padding: 0 30px;
+                                            text-align: center;
+                                        }
+                                        /* tasty menu today */
+                                        .title h2 {
+                                            font-size: 36px;
+                                        }
+                                        .subtitle {
+                                            width: 100%;
+                                        }
+                                        .tasty-menu-area {
+                                            padding: 45px 0 50px;
+                                        }
+                                        .tasty-menu-area .tasty-menu-inner:before {
+                                            height: 97%;
+                                        }
+                                        .tasty-menu-area .tasty-menu-inner ul {
+                                            padding: 30px 0;
+                                        }
+                                        .tasty-menu-area .tasty-menu-inner ul li .media {
+                                            text-align: center;
+                                            position: relative;
+                                            display: inline-block;
+                                        }
+                                        .tasty-menu-area .tasty-menu-inner ul li .media a {
+                                            float: inherit!important;
+                                        }
+                                        .tasty-menu-area .tasty-menu-inner ul li .media a img {
+                                            margin: 0 auto;
+                                        }
+                                        .tasty-menu-area .tasty-menu-inner ul li .media-body {
+                                            position: initial;
+                                        }
+                                        .tasty-menu-area .tasty-menu-inner ul li .media-body span {
+                                            right: 0;
+                                            top: 20px;
+                                        }
+                                        /* our expert chef section */
+                                        .subtitle-color {
+                                            width: 100%;
+                                        }
+                                    }
